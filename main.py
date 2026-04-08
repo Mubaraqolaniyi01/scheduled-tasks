@@ -39,7 +39,7 @@ auth_token = os.environ.get("AUTH_TOKEN")
 parameters={
     "lat": 4.771490,
     "lon": 7.014350,
-    "appid": API_KEY,
+    "appid": api_key,
     "cnt": 4,
 }
 response = requests.get(url= OPEN_WM, params= parameters)
