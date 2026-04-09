@@ -7,8 +7,8 @@ account_sid = os.environ.get("ACCOUNT_SID")
 auth_token = os.environ.get("AUTH_TOKEN")
 
 parameters={
-    "lat": 4.771490,
-    "lon": 7.014350,
+    "lat": 51.507351,
+    "lon": -0.127758,
     "appid": api_key,
     "cnt": 4,
 }
@@ -25,7 +25,7 @@ if shall_rain:
     client = Client(account_sid, auth_token)
     message = client.messages.create(
         from_="whatsapp:+14155238886",
-        body="It's going to rain today. Remember to bring an ☔",
+        body="Hey MBgeniuS, \n\nIt's going to rain today. Don't leave home without your jacket 🧥 or umbrella ☔",
         to="whatsapp:+447424957521"
     )
     print(message.status)
