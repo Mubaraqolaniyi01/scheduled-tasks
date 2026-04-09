@@ -9,7 +9,6 @@ MY_PASSWORD = os.environ.get("MY_PASSWORD")
 
 now = dt.datetime.now()
 today_tuple = (now.month, now.day)
- # Limited to 1 person
 data = pd.read_csv("birthdays.csv")
 birthday_dict = {(data_row.month, data_row.day):data_row for (index, data_row) in data.iterrows()}
 if today_tuple in birthday_dict:
